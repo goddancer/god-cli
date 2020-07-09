@@ -1,2 +1,2 @@
-# god-cli
+# god-clis
 cli-club
