@@ -10,6 +10,8 @@
 
 * 在未link `god-clis` command之前，需要先去掉钩子`"postinstall": "god-clis config set"`，否则会一直报错而无法成功安装
 
+* `postinstall`是npm安装过程中的一个生命周期钩子，`package.json`中定义了，会自动执行
+
 此时就可以使用 `god-clis` 命令了。
 
 `god-clis` commands:
