@@ -5,6 +5,10 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.remove = exports.set = exports.getAll = exports.get = undefined;
 
+var _regenerator = require('babel-runtime/regenerator');
+
+var _regenerator2 = _interopRequireDefault(_regenerator);
+
 var _constants = require('./constants');
 
 var _ini = require('ini');
@@ -32,9 +36,9 @@ var writeFile = (0, _util.promisify)(_fs2.default.writeFile);
 //RC 是配置文件
 //DEFAULTS 是默认的配置
 var get = exports.get = function () {
-    var _ref = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee(key) {
+    var _ref = _asyncToGenerator( /*#__PURE__*/_regenerator2.default.mark(function _callee(key) {
         var exit, opts;
-        return regeneratorRuntime.wrap(function _callee$(_context) {
+        return _regenerator2.default.wrap(function _callee$(_context) {
             while (1) {
                 switch (_context.prev = _context.next) {
                     case 0:
@@ -76,9 +80,9 @@ var get = exports.get = function () {
 }();
 
 var getAll = exports.getAll = function () {
-    var _ref2 = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee2() {
+    var _ref2 = _asyncToGenerator( /*#__PURE__*/_regenerator2.default.mark(function _callee2() {
         var exit, opts;
-        return regeneratorRuntime.wrap(function _callee2$(_context2) {
+        return _regenerator2.default.wrap(function _callee2$(_context2) {
             while (1) {
                 switch (_context2.prev = _context2.next) {
                     case 0:
@@ -120,9 +124,9 @@ var getAll = exports.getAll = function () {
 }();
 
 var set = exports.set = function () {
-    var _ref3 = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee3(key, value) {
+    var _ref3 = _asyncToGenerator( /*#__PURE__*/_regenerator2.default.mark(function _callee3(key, value) {
         var exit, opts;
-        return regeneratorRuntime.wrap(function _callee3$(_context3) {
+        return _regenerator2.default.wrap(function _callee3$(_context3) {
             while (1) {
                 switch (_context3.prev = _context3.next) {
                     case 0:
@@ -193,9 +197,9 @@ var set = exports.set = function () {
 }();
 
 var remove = exports.remove = function () {
-    var _ref4 = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee4(key) {
+    var _ref4 = _asyncToGenerator( /*#__PURE__*/_regenerator2.default.mark(function _callee4(key) {
         var exit, opts;
-        return regeneratorRuntime.wrap(function _callee4$(_context4) {
+        return _regenerator2.default.wrap(function _callee4$(_context4) {
             while (1) {
                 switch (_context4.prev = _context4.next) {
                     case 0:

@@ -1,6 +1,6 @@
 {
   "name": "god-clis",
-  "version": "1.0.6",
+  "version": "1.0.8",
   "description": "god-clis",
   "main": "index.js",
   "bin": {
@@ -17,6 +17,7 @@
   "dependencies": {
     "babel-cli": "^6.26.0",
     "babel-env": "^2.4.1",
+    "babel-plugin-transform-runtime": "^6.23.0",
     "chalk": "^2.4.2",
     "commander": "^2.20.0",
     "download-git-repo": "^2.0.0",
@@ -24,5 +25,7 @@
     "inquirer": "^6.5.0",
     "log-symbols": "^3.0.0",
     "ora": "^3.4.0"
+  },
+  "devDependencies": {
   }
 }
