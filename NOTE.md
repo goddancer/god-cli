@@ -21,3 +21,9 @@
 
 - `god-clis config set type users`
 - `god-clis config set registry goddancer`
+
+### publish
+
+* 执行`npm publish`之后，可以在24h内，执行`npm unpublish -f | npm unpublish god-clis@1.x.x`进行撤回
+
+* 需要注意的是，撤回以后的版本，需要24h以后才可以再次发布
