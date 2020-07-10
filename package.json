@@ -1,6 +1,6 @@
 {
   "name": "god-clis",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "god-clis",
   "main": "index.js",
   "bin": {
@@ -8,15 +8,13 @@
   },
   "scripts": {
     "build": "babel src -d dist",
-    "watch": "npm run compile -- --watch",
+    "watch": "npm run build -- --watch",
     "postinstall": "god-clis config set"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "babel-cli": "^6.26.0",
-    "babel-env": "^2.4.1",
     "chalk": "^2.4.2",
     "commander": "^2.20.0",
     "download-git-repo": "^2.0.0",
@@ -24,5 +22,10 @@
     "inquirer": "^6.5.0",
     "log-symbols": "^3.0.0",
     "ora": "^3.4.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-env": "^2.4.1",
+    "babel-plugin-transform-runtime": "^6.23.0"
   }
 }

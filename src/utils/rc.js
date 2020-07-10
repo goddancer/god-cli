@@ -48,7 +48,11 @@ export const set = async (key, value) => {
         }
         Object.assign(opts, { [key]: value });
     } else {
-        opts = Object.assign(DEFAULTS, { [key]: value });
+        if (key && value) {
+            opts = Object.assign(DEFAULTS, { [key]: value });
+        } else {
+            opts = DEFAULTS;
+        }
     }
     await writeFile(RC, encode(opts), 'utf8');
 }
